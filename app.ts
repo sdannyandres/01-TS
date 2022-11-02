@@ -1,5 +1,6 @@
 interface Int0{
     dato: number
+    dato1: string
 }
 
 interface Iint1{
@@ -15,13 +16,16 @@ interface Iint2 extends Iint1{
 var v1 : Iint2 = {
     
     a: 1,
+    h:{
+        dato:233,
+        dato1:"aa"
+        },
     b: "ALBERTO",
-    h:{dato:233},
     c: new Date(),
     d: 12
    
-
 }
+
 
 
 
