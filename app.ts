@@ -1,32 +1,29 @@
-interface Int0{
-    dato: number
-    dato1: string
-}
-
-interface Iint1{
-    a: number,
-    b: string,
-    c: Date,
-    h: Int0,
-}
-interface Iint2 extends Iint1{
-    d:number
-
-}
-var v1 : Iint2 = {
+interface IC {
     
-    a: 1,
-    h:{
-        dato:233,
-        dato1:"aa"
-        },
-    b: "ALBERTO",
-    c: new Date(),
-    d: 12   
-}
-v1.a = 12
-v1.h.dato1 = "aa"
+    X: number
+    Y: number
+    }
 
+    var coord: IC[] = [
+    {X:1, Y:1},
+    {X:2, Y:1},
+    {X:3, Y:1},
+    {X:4, Y:1},
+    {X:5, Y:1},
 
+    ]
 
+    const pagina = (p: number, u?: number) : IC[] => {
+       if (u === undefined) {
+        return coord.filter((c: IC, index:number) :boolean => {
+            return index >= p 
+        })
+       } else {
+        return coord.filter((c:IC, index:number) :boolean => {
+            return index >= p && index < u
+        })
+       }
+    }
 
+    console.log(pagina(3))
+    console.log(pagina(3,5))
