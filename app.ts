@@ -25,5 +25,5 @@ interface IC {
        }
     }
 
-    console.log(pagina(3))
-    console.log(pagina(3,5))
+    console.log(pagina(0))
+    console.log(pagina(1,2))
