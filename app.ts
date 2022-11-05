@@ -22,10 +22,10 @@ var v1 : Iint2 = {
         },
     b: "ALBERTO",
     c: new Date(),
-    d: 12
-   
+    d: 12   
 }
-
+v1.a = 12
+v1.h.dato1 = "aa"
 
 
 
