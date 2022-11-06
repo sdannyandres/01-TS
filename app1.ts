@@ -1,8 +1,10 @@
 class Persona {
-    nombre: string
+    private _nombre: string
     constructor(nombre: string) {
-        this.nombre = nombre;
+        this._nombre = nombre;
     }
+    get nombre(): {
+        return this._nombre
 }
 var pepe = new Persona("pepe")
 
