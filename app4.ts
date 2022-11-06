@@ -13,5 +13,5 @@ class C1 {
         return this._b;
     }
 }
-var o1 = new C1(12,55);
+var o1 = new C1(12);
 console.log(o1.b, o1.a);
