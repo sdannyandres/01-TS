@@ -8,12 +8,16 @@ class Persona {
     get nombre(){ return this._nombre; }
     get saldo(){ return this._saldo; }
 
+    set saldo(importe:number){ this._saldo = importe; }
+
     addSaldo(importe:number):void {
         this._saldo+= importe
     }
+
 
 }
 
 var pepe = new Persona("pepe", 200)
 pepe.addSaldo(100)
+pepe.saldo = 600
 console.log(pepe.saldo)
